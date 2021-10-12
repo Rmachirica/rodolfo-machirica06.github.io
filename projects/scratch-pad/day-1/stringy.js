@@ -160,20 +160,7 @@ return stringTwo;
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    var string = stringOne.split();
-    var string1 = stringTwo.split();
-    var sortStringOne = string.sort(function(a, b){
-        return a - b;
-    }); 
-    var sortStringTwo = string1.sort(function(a, b){
-        return a - b;
-    });
-
-    var joinOne = sortStringOne.join();
-    var joinTwo = sortStringTwo.join();
-
-return joinOne > joinTwo ? -1 : joinOne < joinTwo ? 1 : 0;
-
+ return stringOne > stringTwo ? -1 : stringOne < stringTwo ? 1 : 0;
     // YOUR CODE ABOVE HERE //
 }
 
@@ -187,17 +174,8 @@ return joinOne > joinTwo ? -1 : joinOne < joinTwo ? 1 : 0;
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-     var newString = stringOne.split();
-     var newString1 = stringTwo.split();
-     var sort = newString.sort(function(a, b){
-         return b - a;
-     });
-     var sort1 = newString1.sort(function(a, b){
-         return b - a;
-     });
-     var newJoint = sort.join();
-     var newJoint1 = sort1.join();
-  return newJoint < newJoint1 ? -1 : newJoint1 < newJoint ? 1 : 0;
+
+  return stringOne < stringTwo ? -1 : stringOne > stringTwo ? 1 : 0;
 
 
     // YOUR CODE ABOVE HERE //
