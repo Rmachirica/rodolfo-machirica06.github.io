@@ -35,7 +35,16 @@
 
 function greeter(hour) {
     // YOUR CODE BELOW HERE //
-    
+    // use comparison operators and logical operator (&&) >= or <= to write the if, else-if- else statements 
+    if (hour >= 0 && hour <= 11) {
+        console.log("Good Morning!");
+    } else if(hour >= 12 && hour <= 16) {
+        console.log("Good Afternoon!");
+    } else if(hour >= 17 && hour <= 21) {
+        console.log("Good Evening!");
+    } else if (hour >= 22 && hour <= 24) {
+        console.log("Good Night!");
+    };
     
     
     
